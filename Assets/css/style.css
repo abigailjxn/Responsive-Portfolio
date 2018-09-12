@@ -205,19 +205,22 @@ h6 {
 /* For Laptops */
 
 @media screen and (max-width: 980px) {
-    .container {
-        width: 90%;
-    }
     .container h1 {
-        position: relative;
         margin-left: 1%;
         font-size: 35px;
-        /* background: red; */
+        background: red;
     }
     nav {
-        position: relative;
         margin-right: 1%;
         background: red;
+    }
+
+    section .content {
+        width: 80%;
+    }
+
+    .text p {
+        font-size: 18px;
     }
 }
 
@@ -226,6 +229,10 @@ h6 {
 @media screen and (max-width: 768px) {
     nav {
         background: blue;
+    }
+
+    .text p {
+        font-size: 18px;
     }
 }
 
