@@ -223,6 +223,11 @@ h6 {
     .text p {
         font-size: 18px;
     }
+
+    td img {
+        height: 200px;
+        width: 200px;
+    }
 }
 
 /* For Tablets */
@@ -244,6 +249,11 @@ h6 {
     .text p {
         font-size: 16px;
     }
+
+    td img {
+        height: 150px;
+        width: 150px;
+    }
 }
 
 /* For Landscape Phones */
@@ -261,6 +271,8 @@ h6 {
         width: 100%;
         position: relative;
         box-sizing: content-box;
+        display: flex
+        
         
     }
 
@@ -273,6 +285,7 @@ h6 {
         text-align: center;
         background: purple;
         padding-left: 0;
+        display: block;
        
     }
 
@@ -284,7 +297,7 @@ h6 {
         background: orange;
         text-align: center;
         margin: auto;
-        
+        display: inline-block;
     }
 
     section .content{
@@ -293,7 +306,15 @@ h6 {
 
     .text #profile {
         width: 100%;
+        height: auto;
         margin-bottom: 5%;
         /* display: block; */
+    }
+
+    td img {
+        height: 150px;
+        width: 150px;
+        display: block;
+        clear: right;
     }
 }
