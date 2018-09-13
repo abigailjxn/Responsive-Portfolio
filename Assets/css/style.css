@@ -21,6 +21,10 @@ body {
     color: #777;
 }
 
+.container {
+    flex-wrap: wrap;
+}
+
 .container h1 {
     font-family: "mrs-eaves-roman-all-petite-c","Georgia", serif;
     font-size: 40px;
@@ -28,9 +32,10 @@ body {
     background-color: #8977a1;
     height: 100%;
     width: 300px;
-    position: absolute;
+    /* position: absolute; */
     padding-left: 20px;
     line-height: 80px;
+    flex-basis: 100%;
 }
 
 .container nav {
@@ -41,6 +46,7 @@ body {
     font-size:18px;
     letter-spacing: 1px;
     float: right;
+    flex-basis: 100%;
 }
 
 h2 {
@@ -125,13 +131,13 @@ textarea {
     border-top: 1px solid grey;
 }
 
-table {
+.portfolio-conatiner {
     position: relative;
     width: 100%;
     margin-top: 20px;
 }
 
-td {
+.col-4 {
     margin-right: 30px; 
     transform: translateZ(0);
     backface-visibility: hidden;
@@ -286,6 +292,7 @@ h6 {
         background: purple;
         padding-left: 0;
         display: block;
+        line-height: normal;
        
     }
 
@@ -313,8 +320,8 @@ h6 {
 
     td img {
         height: 150px;
-        width: 150px;
+        width: 100%;
         display: block;
-        clear: right;
+        clear: both;
     }
 }
